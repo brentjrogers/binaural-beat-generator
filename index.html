@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes" />
+<title>untitled</title>
+<link rel="stylesheet" href="https://www.shapegraph.com/cdn/css/sg.css" type="text/css" />
+</head>
+<body>
+	
+	
+<div id="app">
+  <form>
+    <div class="binaural-freq-wrapper">
+      <input type="text" id="freq2" name="freq2" v-model="freq2" class="input--frequency"/>
+      <p id="freq2label">Left Ear<br />Frequency (HZ)</p>
+    </div>
+    <div class="binaural-freq-wrapper">
+      <input type="text" id="freq" name="freq" v-model="freq" class="input--frequency" />
+      <p>Right Ear<br />Frequency (HZ)</p>
+    </div>
+    <div class="generator-buttons">
+      <button type="button" @click="start()" class="beginTuning generatorButton">Play</button>
+      <button type="button" @click="stop()" class="stopTuning generatorButton">Stop</button>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<script src="script.js" type="text/javascript"></script>
+	
+</body>
+</html>
